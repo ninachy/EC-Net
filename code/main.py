@@ -4,7 +4,6 @@ import socket
 import sys
 import time
 from glob import glob
-
 import numpy as np
 import tensorflow as tf
 from tqdm import tqdm
@@ -52,7 +51,7 @@ UP_RATIO = FLAGS.up_ratio
 MAX_EPOCH = FLAGS.max_epoch
 BASE_LEARNING_RATE = FLAGS.learning_rate
 MODEL_DIR = FLAGS.log_dir
-os.environ['CUDA_VISIBLE_DEVICES'] = GPU_INDEX
+#os.environ['CUDA_VISIBLE_DEVICES'] = GPU_INDEX
 
 def log_string(out_str):
     global LOG_FOUT

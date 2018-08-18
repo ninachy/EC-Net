@@ -1,19 +1,19 @@
 import collections
 import os
 import time
-
 import numpy as np
 import pygraph.algorithms
 import pygraph.algorithms.minmax
 import pygraph.classes.graph
 import tensorflow as tf
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
+import matplotlib as mpl
+mpl.use('TkAgg')
+import matplotlib.pyplot as plt
 from scipy import spatial
 from tqdm import tqdm
-
 import model_utils
 from data_provider import jitter_perturbation_point_cloud
-
 
 def load_off(path):
     #Reset this mesh:
